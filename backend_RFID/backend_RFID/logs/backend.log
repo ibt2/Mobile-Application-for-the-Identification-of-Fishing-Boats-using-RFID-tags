@@ -1,0 +1,270 @@
+2025-08-18 00:15:09.731 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 00:15:09.818 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 00:15:10.277 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T00:30:09.889916600
+2025-08-18 00:15:10.278 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 00:15:16.903 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:15:16.904 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:15:16.937 [http-nio-0.0.0.0-8080-exec-8] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:15:16.938 [http-nio-0.0.0.0-8080-exec-8] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 00:15:37.745 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:15:37.745 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:15:37.751 [http-nio-0.0.0.0-8080-exec-9] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:15:37.751 [http-nio-0.0.0.0-8080-exec-9] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 00:30:22.312 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 00:30:22.327 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 00:30:22.570 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T00:45:22.499975200
+2025-08-18 00:30:22.571 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 00:30:31.385 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:30:31.385 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:30:31.420 [http-nio-0.0.0.0-8080-exec-2] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:30:31.421 [http-nio-0.0.0.0-8080-exec-2] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 00:30:53.957 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:30:53.958 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:30:53.970 [http-nio-0.0.0.0-8080-exec-3] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:30:53.971 [http-nio-0.0.0.0-8080-exec-3] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 00:31:01.134 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 00:31:01.136 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 00:31:01.157 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T00:46:01.145075400
+2025-08-18 00:31:01.158 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 00:31:13.937 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:31:13.938 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:31:13.943 [http-nio-0.0.0.0-8080-exec-5] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:31:13.944 [http-nio-0.0.0.0-8080-exec-5] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 00:36:28.812 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 2004 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-18 00:36:28.919 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-18 00:36:29.014 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-18 00:36:29.404 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 00:36:29.546 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 00:36:35.012 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18 00:36:35.549 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 402 ms. Found 4 JPA repository interfaces.
+2025-08-18 00:36:39.947 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-18 00:36:40.063 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-18 00:36:40.086 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-18 00:36:40.188 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 00:36:40.605 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-18 00:36:40.680 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11009 ms
+2025-08-18 00:36:42.545 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18 00:36:43.025 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-18 00:36:43.242 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-18 00:36:45.384 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18 00:36:45.680 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-18 00:36:46.383 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@237230f8
+2025-08-18 00:36:46.461 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-18 00:36:46.787 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18 00:36:52.592 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18 00:36:52.897 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18 00:36:55.040 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-18 00:36:55.089 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-18 00:36:55.714 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18 00:36:58.538 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-18 00:36:58.665 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-18 00:36:59.177 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 00:36:59.264 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 34.735 seconds (process running for 38.976)
+2025-08-18 00:46:51.460 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 00:46:51.462 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-18 00:46:51.471 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2025-08-18 00:46:51.785 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 00:46:51.786 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 00:46:52.301 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:01:52.195829900
+2025-08-18 00:46:52.303 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 00:46:59.302 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 00:46:59.304 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 00:46:59.323 [http-nio-0.0.0.0-8080-exec-4] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 00:46:59.323 [http-nio-0.0.0.0-8080-exec-4] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 01:00:11.067 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:00:11.079 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:00:11.194 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:15:11.166185200
+2025-08-18 01:00:11.197 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:00:16.656 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 01:00:16.657 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 01:00:16.672 [http-nio-0.0.0.0-8080-exec-9] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 01:00:16.674 [http-nio-0.0.0.0-8080-exec-9] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 01:01:43.138 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.AuthController - Received forgot password request for username: null
+2025-08-18 01:01:43.139 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: null
+2025-08-18 01:01:43.148 [http-nio-0.0.0.0-8080-exec-3] WARN  c.e.backend.service.UserService - Failed to generate reset token: User not found for username: null
+2025-08-18 01:01:43.149 [http-nio-0.0.0.0-8080-exec-3] WARN  c.e.b.controller.AuthController - Forgot password request: User not found for username: null
+2025-08-18 01:21:10.511 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:21:10.540 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:21:10.639 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:36:10.614109600
+2025-08-18 01:21:10.639 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:21:18.561 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:21:18.592 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: cd043219...
+2025-08-18 01:21:18.593 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:21:18.594 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - Searching for user with reset token: cd043219...
+2025-08-18 01:21:18.626 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - User found for reset token. Checking token expiry for user: admin
+2025-08-18 01:21:18.627 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - Token is valid for user admin. Encoding new password.
+2025-08-18 01:21:18.806 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.backend.service.UserService - Password successfully reset for user: admin
+2025-08-18 01:21:18.806 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.AuthController - Password reset successful.
+2025-08-18 01:22:17.700 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:22:17.701 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:22:17.763 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:37:17.752116700
+2025-08-18 01:22:17.763 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:22:24.612 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:22:24.613 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: 3a316ddf...
+2025-08-18 01:22:24.614 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:22:24.616 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Searching for user with reset token: 3a316ddf...
+2025-08-18 01:22:24.626 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - User found for reset token. Checking token expiry for user: admin
+2025-08-18 01:22:24.627 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Token is valid for user admin. Encoding new password.
+2025-08-18 01:22:24.654 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Password successfully reset for user: admin
+2025-08-18 01:22:24.659 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Password reset successful.
+2025-08-18 01:22:37.400 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-18 01:22:37.454 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-18 01:22:37.460 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-18 01:22:37.568 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-18 01:22:37.568 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-18 01:22:37.576 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-18 01:22:37.577 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-18 01:22:37.577 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-18 01:22:54.120 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - ? [SYNC USERS] Total: 1
+2025-08-18 01:22:54.127 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.b.controller.SyncController -  - User: ID=1, Username=admin
+2025-08-18 01:22:56.064 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - ? [SYNC TAGS] Total: 2
+2025-08-18 01:22:56.065 [http-nio-0.0.0.0-8080-exec-9] DEBUG c.e.b.controller.SyncController -  - Tag: ID=1, EPC=E20008163814008405900E40
+2025-08-18 01:22:56.067 [http-nio-0.0.0.0-8080-exec-9] DEBUG c.e.b.controller.SyncController -  - Tag: ID=2, EPC=30396062C38F25800016B5E7
+2025-08-18 01:22:56.184 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - ? [SYNC BARQUES] Total: 3
+2025-08-18 01:22:56.185 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=1, Matricule=BARQUE-001, Port=Agadir
+2025-08-18 01:22:56.185 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=2, Matricule=B-001, Port=Agadir
+2025-08-18 01:22:56.185 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=3, Matricule=B-301, Port=Tanger
+2025-08-18 01:22:56.413 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - ? [SYNC ASSOCIATIONS] Total: 3
+2025-08-18 01:22:56.414 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=1, BarqueID=1, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T17:53:11.526Z, UpdatedAt=2025-08-15T09:36:48.429572200
+2025-08-18 01:22:56.414 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=2, BarqueID=3, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T18:54:15.866768, UpdatedAt=2025-08-15T10:14:30.352260900
+2025-08-18 01:22:56.414 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=3, BarqueID=2, TagID=1, Status=associated, AssociatedAt=2025-08-14T18:56:20.554974200, UpdatedAt=2025-08-16T11:46:32.187711200
+2025-08-18 01:23:57.498 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:23:57.498 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:23:57.523 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:38:57.503093400
+2025-08-18 01:23:57.523 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:24:04.705 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:24:04.706 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: 888ece52...
+2025-08-18 01:24:04.707 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:24:04.707 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - Searching for user with reset token: 888ece52...
+2025-08-18 01:24:04.715 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - User found for reset token. Checking token expiry for user: admin
+2025-08-18 01:24:04.715 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.backend.service.UserService - Token is valid for user admin. Encoding new password.
+2025-08-18 01:24:04.731 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.backend.service.UserService - Password successfully reset for user: admin
+2025-08-18 01:24:04.732 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.AuthController - Password reset successful.
+2025-08-18 01:24:14.602 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:24:14.602 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: 888ece52...
+2025-08-18 01:24:14.603 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:24:14.603 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Searching for user with reset token: 888ece52...
+2025-08-18 01:24:14.609 [http-nio-0.0.0.0-8080-exec-1] WARN  c.e.backend.service.UserService - Password reset failed: Invalid or non-existent token provided.
+2025-08-18 01:24:14.610 [http-nio-0.0.0.0-8080-exec-1] WARN  c.e.b.controller.AuthController - Password reset failed for provided token.
+2025-08-18 01:24:40.778 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:24:40.780 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:24:40.803 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:39:40.789630400
+2025-08-18 01:24:40.804 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:24:46.755 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:24:46.756 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: 8c12092c...
+2025-08-18 01:24:46.756 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:24:46.756 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Searching for user with reset token: 8c12092c...
+2025-08-18 01:24:46.762 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - User found for reset token. Checking token expiry for user: admin
+2025-08-18 01:24:46.764 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Token is valid for user admin. Encoding new password.
+2025-08-18 01:24:46.774 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.backend.service.UserService - Password successfully reset for user: admin
+2025-08-18 01:24:46.775 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Password reset successful.
+2025-08-18 01:24:59.357 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - ? [SYNC USERS] Total: 1
+2025-08-18 01:24:59.359 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.b.controller.SyncController -  - User: ID=1, Username=admin
+2025-08-18 01:25:00.806 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - ? [SYNC TAGS] Total: 2
+2025-08-18 01:25:00.807 [http-nio-0.0.0.0-8080-exec-9] DEBUG c.e.b.controller.SyncController -  - Tag: ID=1, EPC=E20008163814008405900E40
+2025-08-18 01:25:00.807 [http-nio-0.0.0.0-8080-exec-9] DEBUG c.e.b.controller.SyncController -  - Tag: ID=2, EPC=30396062C38F25800016B5E7
+2025-08-18 01:25:00.943 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - ? [SYNC BARQUES] Total: 3
+2025-08-18 01:25:00.944 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=1, Matricule=BARQUE-001, Port=Agadir
+2025-08-18 01:25:00.944 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=2, Matricule=B-001, Port=Agadir
+2025-08-18 01:25:00.945 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Barque: ID=3, Matricule=B-301, Port=Tanger
+2025-08-18 01:25:01.058 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - ? [SYNC ASSOCIATIONS] Total: 3
+2025-08-18 01:25:01.059 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=1, BarqueID=1, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T17:53:11.526Z, UpdatedAt=2025-08-15T09:36:48.429572200
+2025-08-18 01:25:01.060 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=2, BarqueID=3, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T18:54:15.866768, UpdatedAt=2025-08-15T10:14:30.352260900
+2025-08-18 01:25:01.060 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Association: ID=3, BarqueID=2, TagID=1, Status=associated, AssociatedAt=2025-08-14T18:56:20.554974200, UpdatedAt=2025-08-16T11:46:32.187711200
+2025-08-18 01:25:14.508 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - ?? [UPLOAD ASSOCIATIONS] Réception de 1 associations du frontend.
+2025-08-18 01:25:14.572 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.SyncController - Association traitée (Tag: 1, Barque: 2)
+2025-08-18 01:25:14.573 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - ? [UPLOAD ASSOCIATIONS] 1 associations traitées et sauvegardées/mis à jour.
+2025-08-18 01:25:33.024 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - ?? [UPLOAD ASSOCIATIONS] Réception de 1 associations du frontend.
+2025-08-18 01:25:33.043 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.SyncController - Association traitée (Tag: 1, Barque: 2)
+2025-08-18 01:25:33.043 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - ? [UPLOAD ASSOCIATIONS] 1 associations traitées et sauvegardées/mis à jour.
+2025-08-18 01:25:57.790 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - ? [SYNC USERS] Total: 1
+2025-08-18 01:25:57.791 [http-nio-0.0.0.0-8080-exec-10] DEBUG c.e.b.controller.SyncController -  - User: ID=1, Username=admin
+2025-08-18 01:25:58.997 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - ? [SYNC TAGS] Total: 2
+2025-08-18 01:25:58.998 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.SyncController -  - Tag: ID=1, EPC=E20008163814008405900E40
+2025-08-18 01:25:58.998 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.SyncController -  - Tag: ID=2, EPC=30396062C38F25800016B5E7
+2025-08-18 01:25:59.111 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - ? [SYNC BARQUES] Total: 3
+2025-08-18 01:25:59.112 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Barque: ID=1, Matricule=BARQUE-001, Port=Agadir
+2025-08-18 01:25:59.113 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Barque: ID=2, Matricule=B-001, Port=Agadir
+2025-08-18 01:25:59.113 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Barque: ID=3, Matricule=B-301, Port=Tanger
+2025-08-18 01:25:59.259 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - ? [SYNC ASSOCIATIONS] Total: 3
+2025-08-18 01:25:59.260 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Association: ID=1, BarqueID=1, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T17:53:11.526Z, UpdatedAt=2025-08-15T09:36:48.429572200
+2025-08-18 01:25:59.261 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Association: ID=2, BarqueID=3, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T18:54:15.866768, UpdatedAt=2025-08-15T10:14:30.352260900
+2025-08-18 01:25:59.261 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Association: ID=3, BarqueID=2, TagID=1, Status=associated, AssociatedAt=2025-08-14T18:56:20.554974200, UpdatedAt=2025-08-18T01:25:33.044115500
+2025-08-18 01:33:12.439 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 6124 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-18 01:33:12.441 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-18 01:33:12.444 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-18 01:33:12.532 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-18 01:33:12.532 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-18 01:33:13.686 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-18 01:33:13.829 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 115 ms. Found 4 JPA repository interfaces.
+2025-08-18 01:33:15.594 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-18 01:33:15.636 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-18 01:33:15.647 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-18 01:33:15.648 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-18 01:33:15.822 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-18 01:33:15.826 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3290 ms
+2025-08-18 01:33:16.317 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-18 01:33:16.554 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-18 01:33:16.698 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-18 01:33:17.586 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-18 01:33:17.683 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-18 01:33:17.971 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@39ef1271
+2025-08-18 01:33:17.977 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-18 01:33:18.123 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-18 01:33:19.670 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-18 01:33:19.749 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-18 01:33:20.250 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-18 01:33:20.251 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-18 01:33:20.436 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-18 01:33:21.302 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-18 01:33:21.328 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-18 01:33:21.385 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-18 01:33:21.405 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 9.82 seconds (process running for 10.57)
+2025-08-18 01:34:20.251 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-18 01:34:20.252 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-18 01:34:20.254 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-18 01:34:20.488 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received forgot password request for username: admin
+2025-08-18 01:34:20.489 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Received request to generate reset password token for username: admin
+2025-08-18 01:34:20.814 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - Successfully generated reset token for user admin. Token expires at: 2025-08-18T01:49:20.742669900
+2025-08-18 01:34:20.815 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Password reset token generated for user: admin
+2025-08-18 01:34:27.986 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Received reset password request with token.
+2025-08-18 01:34:27.987 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.AuthController - Attempting to reset password using token: caaf404f...
+2025-08-18 01:34:27.987 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - Attempting to reset password using token.
+2025-08-18 01:34:27.988 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Searching for user with reset token: caaf404f...
+2025-08-18 01:34:27.992 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - User found for reset token. Checking token expiry for user: admin
+2025-08-18 01:34:27.993 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Token is valid for user admin. Encoding new password.
+2025-08-18 01:34:28.021 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - Password successfully reset for user: admin
+2025-08-18 01:34:28.021 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Password reset successful.
+2025-08-18 01:34:41.161 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - ? [SYNC USERS] Total: 1
+2025-08-18 01:34:41.162 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - User: ID=1, Username=admin
+2025-08-18 01:34:42.540 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - ? [SYNC TAGS] Total: 2
+2025-08-18 01:34:42.541 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Tag: ID=1, EPC=E20008163814008405900E40
+2025-08-18 01:34:42.541 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Tag: ID=2, EPC=30396062C38F25800016B5E7
+2025-08-18 01:34:42.652 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - ? [SYNC BARQUES] Total: 3
+2025-08-18 01:34:42.653 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Barque: ID=1, Matricule=BARQUE-001, Port=Agadir
+2025-08-18 01:34:42.654 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Barque: ID=2, Matricule=B-001, Port=Agadir
+2025-08-18 01:34:42.654 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.SyncController -  - Barque: ID=3, Matricule=B-301, Port=Tanger
+2025-08-18 01:34:42.819 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - ? [SYNC ASSOCIATIONS] Total: 3
+2025-08-18 01:34:42.821 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.SyncController -  - Association: ID=1, BarqueID=1, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T17:53:11.526Z, UpdatedAt=2025-08-15T09:36:48.429572200
+2025-08-18 01:34:42.822 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.SyncController -  - Association: ID=2, BarqueID=3, TagID=1, Status=dissociated, AssociatedAt=2025-08-14T18:54:15.866768, UpdatedAt=2025-08-15T10:14:30.352260900
+2025-08-18 01:34:42.822 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.SyncController -  - Association: ID=3, BarqueID=2, TagID=1, Status=associated, AssociatedAt=2025-08-14T18:56:20.554974200, UpdatedAt=2025-08-18T01:25:33.044115500
+2025-08-18 01:34:52.070 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - ?? [UPLOAD ASSOCIATIONS] Réception de 1 associations du frontend.
+2025-08-18 01:34:52.094 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.SyncController - Association traitée (Tag: 1, Barque: 2)
+2025-08-18 01:34:52.095 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - ? [UPLOAD ASSOCIATIONS] 1 associations traitées et sauvegardées/mis à jour.
+2025-08-18 01:35:05.473 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - ?? [UPLOAD ASSOCIATIONS] Réception de 1 associations du frontend.
+2025-08-18 01:35:05.485 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.b.controller.SyncController - Association traitée (Tag: 1, Barque: 2)
+2025-08-18 01:35:05.486 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - ? [UPLOAD ASSOCIATIONS] 1 associations traitées et sauvegardées/mis à jour.

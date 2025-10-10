@@ -1,0 +1,165 @@
+2025-08-05 00:02:31.987 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 00:02:32.119 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 00:02:32.245 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 00:02:32.281 [http-nio-0.0.0.0-8080-exec-6] ERROR c.e.b.controller.AuthController - Authentication failed for user admin: Bad credentials
+2025-08-05 00:02:38.409 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 00:02:38.410 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 00:02:38.447 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 00:02:38.448 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-05 00:02:38.449 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-05 00:02:38.461 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-05 00:02:38.462 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-05 00:02:38.462 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-05 00:02:41.960 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 00:02:41.985 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 00:02:42.088 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 00:02:42.095 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 00:02:42.162 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 00:02:42.172 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 00:04:05.673 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 00:04:05.716 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 00:04:05.891 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 00:04:05.902 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 00:04:05.953 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 00:04:05.971 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 14:06:46.483 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 7832 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-05 14:06:46.486 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 14:06:46.487 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-05 14:06:46.556 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-05 14:06:46.557 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-05 14:06:47.422 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 14:06:47.509 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2025-08-05 14:06:48.239 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-05 14:06:48.258 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-05 14:06:48.264 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-05 14:06:48.265 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 14:06:48.359 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-05 14:06:48.360 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1801 ms
+2025-08-05 14:06:48.555 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 14:06:48.633 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 14:06:48.686 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-05 14:06:49.044 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 14:06:49.084 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-05 14:06:49.205 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@73380fb4
+2025-08-05 14:06:49.208 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-05 14:06:49.267 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 14:06:50.154 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 14:06:50.208 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 14:06:50.555 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-05 14:06:50.556 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 14:06:50.648 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-05 14:06:51.195 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-05 14:06:51.212 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-05 14:06:51.239 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-05 14:06:51.251 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.49 seconds (process running for 6.028)
+2025-08-05 14:06:55.936 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 14:06:55.938 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-05 14:06:55.939 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-05 14:06:56.060 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 14:06:56.065 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 14:06:56.217 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 14:06:56.219 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-05 14:06:56.220 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-05 14:06:56.222 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-05 14:06:56.223 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-05 14:06:56.224 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-05 14:07:00.436 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 14:07:00.493 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 14:07:00.620 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 14:07:00.673 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 14:07:00.717 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 14:07:00.723 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 18:02:01.908 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 2436 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-05 18:02:01.910 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-05 18:02:01.912 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-05 18:02:01.973 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-05 18:02:01.973 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-05 18:02:03.038 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-05 18:02:03.120 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 3 JPA repository interfaces.
+2025-08-05 18:02:03.942 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-05 18:02:03.956 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-05 18:02:03.960 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-05 18:02:03.960 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-05 18:02:04.024 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-05 18:02:04.026 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2051 ms
+2025-08-05 18:02:04.205 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-05 18:02:04.284 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-05 18:02:04.335 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-05 18:02:04.661 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-05 18:02:04.705 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-05 18:02:04.819 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@20b68d00
+2025-08-05 18:02:04.822 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-05 18:02:04.876 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-05 18:02:05.702 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-05 18:02:05.751 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 18:02:06.122 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-05 18:02:06.123 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-05 18:02:06.202 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-05 18:02:06.697 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-05 18:02:06.708 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-05 18:02:06.736 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-05 18:02:06.748 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.479 seconds (process running for 5.96)
+2025-08-05 18:02:11.961 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-05 18:02:11.962 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-05 18:02:11.963 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-05 18:02:12.087 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 18:02:12.092 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 18:02:12.253 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 18:02:12.258 [http-nio-0.0.0.0-8080-exec-1] ERROR c.e.b.controller.AuthController - Authentication failed for user admin: Bad credentials
+2025-08-05 18:02:23.904 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 18:02:23.905 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 18:02:23.910 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 18:02:23.911 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-05 18:02:23.912 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-05 18:02:23.915 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-05 18:02:23.916 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-05 18:02:23.916 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-05 18:02:27.292 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 18:02:27.314 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 18:02:27.444 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 18:02:27.457 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 18:02:27.506 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 18:02:27.512 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 18:18:34.033 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-05 18:18:34.050 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-05 18:18:34.113 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-05 18:18:34.117 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-05 18:18:34.118 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-05 18:18:34.147 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-05 18:18:34.147 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-05 18:18:34.147 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-05 18:18:39.957 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 18:18:39.972 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 18:18:40.077 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 18:18:40.081 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 18:18:40.134 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 18:18:40.145 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 18:34:27.731 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-05 18:34:27.756 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Returning 4 users for sync.
+2025-08-05 18:34:27.888 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-05 18:34:27.903 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Returning 0 tags for sync.
+2025-08-05 18:34:27.969 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-05 18:34:27.980 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Returning 5 barques for sync.
+2025-08-05 18:45:00.601 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m55s97ms357탎300ns).
+2025-08-05 18:45:57.541 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s46ms949탎).
+2025-08-05 21:02:34.543 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h10m37s18ms191탎200ns).
+2025-08-05 21:26:28.688 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m54s222ms712탎200ns).
+2025-08-05 21:48:00.470 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-05 21:48:00.844 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-05 21:48:00.870 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-05 21:48:00.905 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-05 21:48:00.916 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

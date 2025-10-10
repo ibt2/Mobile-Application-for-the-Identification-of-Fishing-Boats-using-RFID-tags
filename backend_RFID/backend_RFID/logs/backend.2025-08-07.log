@@ -1,0 +1,1035 @@
+2025-08-07 00:00:56.601 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 00:00:56.713 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 00:00:56.811 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 00:00:56.812 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 10:45:57.788 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 12360 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 10:45:57.791 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 10:45:57.793 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 10:45:57.872 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 10:45:57.873 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 10:45:58.736 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 10:45:58.822 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2025-08-07 10:45:59.578 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 10:45:59.597 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 10:45:59.600 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 10:45:59.601 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 10:45:59.664 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 10:45:59.665 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1790 ms
+2025-08-07 10:45:59.856 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 10:45:59.932 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 10:45:59.978 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 10:46:00.323 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 10:46:00.365 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 10:46:00.478 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1f04e511
+2025-08-07 10:46:00.481 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 10:46:00.536 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 10:46:01.442 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 10:46:01.496 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 10:46:01.832 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 10:46:01.833 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 10:46:01.925 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 10:46:02.441 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 10:46:02.466 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 10:46:02.490 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 10:46:02.500 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.609 seconds (process running for 6.143)
+2025-08-07 10:46:25.788 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 10:46:25.789 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 10:46:25.790 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 10:46:25.911 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 10:46:25.915 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 10:46:26.056 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 10:46:26.058 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 10:46:26.059 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 10:46:26.061 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 10:46:26.061 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 10:46:26.062 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 10:46:29.352 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 10:46:31.440 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 10:46:31.577 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 10:46:31.579 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 10:46:36.569 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 10:46:36.912 [http-nio-0.0.0.0-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 10:46:36.913 [http-nio-0.0.0.0-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 10:47:14.218 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 10:48:23.129 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 10:48:23.345 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 10:48:23.345 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 10:48:27.090 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 10:48:27.208 [http-nio-0.0.0.0-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 10:48:27.208 [http-nio-0.0.0.0-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 10:52:53.485 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 10:52:53.838 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 10:52:53.843 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 10:52:53.849 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 10:52:53.853 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 10:53:14.379 [main] INFO  c.e.b.BackendRfidApplicationTests - Starting BackendRfidApplicationTests using Java 17.0.15 with PID 7900 (started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 10:53:14.383 [main] DEBUG c.e.b.BackendRfidApplicationTests - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 10:53:14.385 [main] INFO  c.e.b.BackendRfidApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 10:53:15.394 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 10:53:15.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2025-08-07 10:53:16.312 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 10:53:16.418 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 10:53:16.488 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 10:53:17.025 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 10:53:17.084 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 10:53:17.211 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@34b2d51a
+2025-08-07 10:53:17.214 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 10:53:17.280 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 10:53:18.360 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 10:53:18.401 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 10:53:18.889 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 10:53:18.890 [main] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 10:53:18.996 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 10:53:19.882 [main] INFO  c.e.b.BackendRfidApplicationTests - Started BackendRfidApplicationTests in 6.081 seconds (process running for 7.504)
+2025-08-07 10:53:20.499 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 10:53:20.506 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 10:53:20.510 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 10:53:31.195 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 10892 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 10:53:31.197 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 10:53:31.201 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 10:53:31.257 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 10:53:31.257 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 10:53:32.050 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 10:53:32.138 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2025-08-07 10:53:32.847 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 10:53:32.859 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 10:53:32.863 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 10:53:32.864 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 10:53:32.933 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 10:53:32.935 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1674 ms
+2025-08-07 10:53:33.113 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 10:53:33.169 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 10:53:33.206 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 10:53:33.492 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 10:53:33.529 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 10:53:33.643 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@6f1d9330
+2025-08-07 10:53:33.645 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 10:53:33.697 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 10:53:34.532 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 10:53:34.578 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 10:53:34.893 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 10:53:34.894 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 10:53:34.980 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 10:53:35.524 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 10:53:35.537 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 10:53:35.565 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 10:53:35.578 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.068 seconds (process running for 5.532)
+2025-08-07 10:53:43.415 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 10:53:43.416 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 10:53:43.417 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 10:53:43.457 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 10:53:47.129 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 10:53:50.087 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 10:53:59.526 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 10:54:08.436 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:11:29.042 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 11:11:29.352 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 11:11:29.359 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:11:29.363 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 11:11:29.366 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 11:11:41.394 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 14152 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 11:11:41.397 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 11:11:41.398 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 11:11:41.454 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 11:11:41.454 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 11:11:42.246 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 11:11:42.329 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2025-08-07 11:11:43.081 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 11:11:43.100 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:11:43.103 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 11:11:43.105 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 11:11:43.163 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 11:11:43.164 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1709 ms
+2025-08-07 11:11:43.348 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 11:11:43.415 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 11:11:43.460 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 11:11:43.767 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 11:11:43.807 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 11:11:43.915 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@3353a987
+2025-08-07 11:11:43.918 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 11:11:43.976 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 11:11:44.854 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 11:11:44.899 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:11:45.202 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 11:11:45.203 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 11:11:45.290 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 11:11:45.796 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 11:11:45.811 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:11:45.834 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 11:11:45.846 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.015 seconds (process running for 5.44)
+2025-08-07 11:11:48.884 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 11:11:48.884 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 11:11:48.886 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 11:11:48.931 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:11:52.512 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 11:11:55.569 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 11:11:57.342 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:37:26.234 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 11:37:26.537 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 11:37:26.543 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:37:26.549 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 11:37:26.552 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 11:37:39.477 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 1992 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 11:37:39.481 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 11:37:39.482 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 11:37:39.548 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 11:37:39.548 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 11:37:40.441 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 11:37:40.524 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+2025-08-07 11:37:41.236 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 11:37:41.248 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:37:41.252 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 11:37:41.253 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 11:37:41.311 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 11:37:41.313 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1762 ms
+2025-08-07 11:37:41.485 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 11:37:41.551 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 11:37:41.586 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 11:37:41.869 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 11:37:41.901 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 11:37:42.017 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@9bdeb38
+2025-08-07 11:37:42.022 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 11:37:42.081 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 11:37:42.956 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 11:37:43.001 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:37:43.299 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 11:37:43.300 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 11:37:43.392 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 11:37:43.871 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 11:37:43.884 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:37:43.908 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 11:37:43.919 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.031 seconds (process running for 5.481)
+2025-08-07 11:37:51.018 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 11:37:51.018 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 11:37:51.020 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 11:37:51.061 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 11:37:55.376 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:37:55.499 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 11:37:55.500 [http-nio-0.0.0.0-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 11:37:57.808 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 11:37:59.762 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:37:59.844 [http-nio-0.0.0.0-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 11:37:59.845 [http-nio-0.0.0.0-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 11:38:02.083 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 11:54:59.301 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 11:54:59.625 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 11:54:59.630 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:54:59.635 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 11:54:59.639 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 11:56:49.692 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 16732 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 11:56:49.695 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 11:56:49.696 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 11:56:49.763 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 11:56:49.764 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 11:56:50.585 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 11:56:50.661 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-08-07 11:56:51.408 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 11:56:51.429 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:56:51.433 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 11:56:51.435 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 11:56:51.505 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 11:56:51.506 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1740 ms
+2025-08-07 11:56:51.737 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 11:56:51.834 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 11:56:51.878 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 11:56:52.177 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 11:56:52.217 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 11:56:52.350 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@81dbf1c
+2025-08-07 11:56:52.352 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 11:56:52.420 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 11:56:53.419 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 11:56:53.491 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:56:53.862 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 11:56:53.863 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 11:56:54.005 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 11:56:54.838 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 11:56:54.858 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 11:56:54.885 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 11:56:54.896 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.766 seconds (process running for 6.228)
+2025-08-07 11:56:56.718 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 11:56:56.718 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 11:56:56.720 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 11:58:17.450 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.AuthController - Received registration request for username: ibtissam
+2025-08-07 11:58:17.451 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - Attempting to find user by username: ibtissam
+2025-08-07 11:58:17.656 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - User not found with username: ibtissam
+2025-08-07 11:58:17.657 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - Encoding password for user: ibtissam
+2025-08-07 11:58:17.662 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.backend.service.UserService - Attempting to save new user: ibtissam
+2025-08-07 11:58:17.671 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.backend.service.UserService - User saved successfully with ID: 1
+2025-08-07 11:58:17.672 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.AuthController - Registration successful for user: ibtissam
+2025-08-07 11:58:29.743 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Received registration request for username: admin
+2025-08-07 11:58:29.744 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 11:58:29.749 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - User not found with username: admin
+2025-08-07 11:58:29.750 [http-nio-0.0.0.0-8080-exec-7] DEBUG c.e.backend.service.UserService - Encoding password for user: admin
+2025-08-07 11:58:29.750 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - Attempting to save new user: admin
+2025-08-07 11:58:29.771 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.backend.service.UserService - User saved successfully with ID: 2
+2025-08-07 11:58:29.771 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.AuthController - Registration successful for user: admin
+2025-08-07 11:58:46.517 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 11:58:48.116 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:58:52.753 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:59:28.741 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 11:59:46.046 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 11:59:46.342 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 11:59:46.347 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 11:59:46.352 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 11:59:46.355 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 12:00:00.589 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 3148 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 12:00:00.591 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 12:00:00.593 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 12:00:00.655 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 12:00:00.655 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 12:00:01.486 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 12:00:01.565 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-08-07 12:00:02.273 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 12:00:02.284 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:00:02.287 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 12:00:02.288 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 12:00:02.341 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 12:00:02.343 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1686 ms
+2025-08-07 12:00:02.504 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 12:00:02.558 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 12:00:02.594 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 12:00:02.869 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 12:00:02.901 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 12:00:03.017 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@14cd14c8
+2025-08-07 12:00:03.019 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 12:00:03.066 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 12:00:03.868 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 12:00:03.935 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 12:00:04.232 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 12:00:04.233 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 12:00:04.335 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 12:00:04.804 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 12:00:04.819 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:00:04.848 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 12:00:04.865 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.033 seconds (process running for 5.58)
+2025-08-07 12:00:08.090 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 12:00:08.091 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 12:00:08.092 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 12:00:08.129 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:00:23.174 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:00:28.048 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:01:55.902 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:02:02.427 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:02:08.478 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:02:12.861 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:03:05.811 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:03:42.967 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:03:45.256 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:03:52.955 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:06:49.982 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 12:06:50.236 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 12:06:50.241 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 12:06:50.244 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 12:06:50.247 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 12:07:02.592 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 15000 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 12:07:02.594 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 12:07:02.596 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 12:07:02.654 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 12:07:02.655 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 12:07:03.391 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 12:07:03.463 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-08-07 12:07:04.113 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 12:07:04.128 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:07:04.132 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 12:07:04.134 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 12:07:04.188 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 12:07:04.189 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1532 ms
+2025-08-07 12:07:04.355 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 12:07:04.410 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 12:07:04.446 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 12:07:04.728 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 12:07:04.762 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 12:07:04.912 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@188227d0
+2025-08-07 12:07:04.915 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 12:07:04.965 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 12:07:05.789 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 12:07:05.836 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 12:07:06.128 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 12:07:06.129 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 12:07:06.222 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 12:07:06.682 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 12:07:06.701 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:07:06.729 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 12:07:06.750 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 4.77 seconds (process running for 5.238)
+2025-08-07 12:07:12.164 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 12:07:12.165 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 12:07:12.167 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-07 12:07:12.206 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:07:21.457 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:07:24.128 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:09:15.530 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:09:17.520 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:09:19.309 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:09:29.966 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:09:33.029 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:09:36.510 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:17:29.865 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - ? Requête reçue pour synchroniser les barques
+2025-08-07 12:26:42.942 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 12:26:43.293 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 12:26:43.321 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 12:26:43.362 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 12:26:43.375 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 12:27:02.257 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 13740 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 12:27:02.260 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 12:27:02.261 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 12:27:02.316 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 12:27:02.316 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 12:27:03.092 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 12:27:03.171 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2025-08-07 12:27:03.828 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 12:27:03.840 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:27:03.843 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 12:27:03.844 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 12:27:03.896 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 12:27:03.897 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1580 ms
+2025-08-07 12:27:04.073 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 12:27:04.142 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 12:27:04.197 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 12:27:04.592 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 12:27:04.639 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 12:27:04.782 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@5ab0dc94
+2025-08-07 12:27:04.784 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 12:27:04.842 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 12:27:05.738 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 12:27:05.783 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 12:27:06.187 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 12:27:06.188 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 12:27:06.294 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 12:27:06.881 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 12:27:06.903 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 12:27:06.929 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 12:27:06.940 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.257 seconds (process running for 5.774)
+2025-08-07 12:27:35.284 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 12:27:35.284 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 12:27:35.286 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 12:27:35.398 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 12:27:35.402 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 12:27:35.578 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 12:27:35.580 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 12:27:35.580 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 12:27:35.582 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 12:27:35.583 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 12:27:35.583 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 12:27:42.423 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:28:01.131 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:44:06.803 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 12:44:06.822 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 12:44:06.930 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 12:44:06.937 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 12:44:06.938 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 12:44:06.942 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 12:44:06.943 [http-nio-0.0.0.0-8080-exec-5] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 12:44:06.943 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 12:44:10.460 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:44:10.597 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:44:10.748 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:45:04.643 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:45:04.740 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:45:04.799 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 12:45:58.643 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 12:45:58.751 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 12:45:58.819 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:00:41.447 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:00:41.541 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:00:44.486 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:00:44.583 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:00:50.772 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:00:50.935 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:05:06.682 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:05:06.761 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:05:08.719 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:05:08.812 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:05:15.068 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:05:15.168 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:05:23.867 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 13:05:24.163 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 13:05:24.197 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:05:24.223 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 13:05:24.228 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 13:05:34.779 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 16104 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 13:05:34.782 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 13:05:34.783 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 13:05:34.844 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 13:05:34.845 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 13:05:35.707 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 13:05:35.797 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+2025-08-07 13:05:36.530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 13:05:36.548 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:05:36.552 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 13:05:36.553 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 13:05:36.615 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 13:05:36.616 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1770 ms
+2025-08-07 13:05:36.798 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 13:05:36.874 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 13:05:36.919 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 13:05:37.234 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 13:05:37.274 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 13:05:37.382 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@3353a987
+2025-08-07 13:05:37.385 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 13:05:37.431 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 13:05:38.314 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 13:05:38.359 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:05:38.682 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 13:05:38.683 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 13:05:38.769 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 13:05:39.282 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 13:05:39.295 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:05:39.320 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 13:05:39.332 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.169 seconds (process running for 5.623)
+2025-08-07 13:05:41.909 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 13:05:41.910 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 13:05:41.912 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-07 13:05:41.959 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:05:42.340 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:06:53.341 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:06:53.437 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:06:54.867 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:06:54.951 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:07:06.455 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 13:07:06.703 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 13:07:06.708 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:07:06.712 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 13:07:06.715 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 13:08:01.022 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 13320 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 13:08:01.024 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 13:08:01.025 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 13:08:01.084 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 13:08:01.085 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 13:08:01.949 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 13:08:02.201 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 236 ms. Found 3 JPA repository interfaces.
+2025-08-07 13:08:03.121 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 13:08:03.136 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:08:03.140 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 13:08:03.142 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 13:08:03.211 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 13:08:03.214 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2125 ms
+2025-08-07 13:08:03.708 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 13:08:03.788 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 13:08:03.827 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 13:08:04.164 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 13:08:04.231 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 13:08:04.383 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@475fd7dd
+2025-08-07 13:08:04.386 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 13:08:04.438 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 13:08:05.432 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 13:08:05.502 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:08:05.924 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 13:08:05.924 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 13:08:06.028 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 13:08:06.541 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 13:08:06.559 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:08:06.589 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 13:08:06.609 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 6.178 seconds (process running for 6.639)
+2025-08-07 13:08:18.971 [http-nio-0.0.0.0-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 13:08:18.971 [http-nio-0.0.0.0-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 13:08:18.973 [http-nio-0.0.0.0-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 13:08:19.136 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Received registration request for username: admin
+2025-08-07 13:08:19.137 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 13:08:19.267 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - User not found with username: admin
+2025-08-07 13:08:19.268 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.backend.service.UserService - Encoding password for user: admin
+2025-08-07 13:08:19.270 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - Attempting to save new user: admin
+2025-08-07 13:08:19.350 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.backend.service.UserService - User saved successfully with ID: 1
+2025-08-07 13:08:19.350 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.AuthController - Registration successful for user: admin
+2025-08-07 13:08:27.144 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.AuthController - Received registration request for username: ibtissam
+2025-08-07 13:08:27.145 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.backend.service.UserService - Attempting to find user by username: ibtissam
+2025-08-07 13:08:27.149 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.backend.service.UserService - User not found with username: ibtissam
+2025-08-07 13:08:27.150 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.backend.service.UserService - Encoding password for user: ibtissam
+2025-08-07 13:08:27.150 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.backend.service.UserService - Attempting to save new user: ibtissam
+2025-08-07 13:08:27.200 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.backend.service.UserService - User saved successfully with ID: 2
+2025-08-07 13:08:27.200 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.AuthController - Registration successful for user: ibtissam
+2025-08-07 13:09:01.697 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:09:01.795 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:09:01.845 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:14:29.098 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:14:29.183 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:14:29.232 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:14:33.973 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:14:34.071 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:14:34.123 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:15:11.347 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:15:11.453 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:15:11.523 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:20:00.663 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:20:00.744 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:20:00.806 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 13:22:04.954 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:22:05.256 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:22:05.359 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 13:22:05.361 [http-nio-0.0.0.0-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 13:22:12.624 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:22:12.685 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:22:12.750 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 13:22:12.751 [http-nio-0.0.0.0-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 13:22:37.811 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:22:37.917 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:22:38.035 [http-nio-0.0.0.0-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 13:22:38.037 [http-nio-0.0.0.0-8080-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 13:23:26.059 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:23:26.133 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:23:26.258 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)
+2025-08-07 13:23:26.259 [http-nio-0.0.0.0-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: Document nesting depth (1001) exceeds the maximum allowed (1000, from `StreamWriteConstraints.getMaxNestingDepth()`)]
+2025-08-07 13:25:00.174 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 13:25:00.515 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 13:25:00.520 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:25:00.523 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 13:25:00.526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 13:25:13.249 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 18608 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 13:25:13.251 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 13:25:13.252 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 13:25:13.307 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 13:25:13.307 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 13:25:14.088 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 13:25:14.164 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2025-08-07 13:25:14.984 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 13:25:15.001 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:25:15.006 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 13:25:15.007 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 13:25:15.078 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 13:25:15.079 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1771 ms
+2025-08-07 13:25:15.266 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 13:25:15.320 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 13:25:15.371 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 13:25:15.723 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 13:25:15.760 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 13:25:15.934 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@61cc84de
+2025-08-07 13:25:15.940 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 13:25:16.028 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 13:25:17.122 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 13:25:17.171 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:25:17.578 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 13:25:17.580 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 13:25:17.685 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 13:25:18.243 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 13:25:18.257 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:25:18.277 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 13:25:18.288 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.655 seconds (process running for 6.098)
+2025-08-07 13:25:21.233 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 13:25:21.234 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 13:25:21.236 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-07 13:25:21.291 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:25:21.562 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:26:57.216 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:26:57.300 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:27:01.728 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:27:01.807 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:27:04.465 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:27:04.548 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:28:33.348 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 13:28:33.367 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 13:28:33.407 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 13:28:33.413 [http-nio-0.0.0.0-8080-exec-1] ERROR c.e.b.controller.AuthController - Authentication failed for user admin: Bad credentials
+2025-08-07 13:28:44.098 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:28:44.164 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:30:34.132 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s147ms300µs600ns).
+2025-08-07 13:30:51.499 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:30:51.573 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:30:53.553 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:30:53.630 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:31:40.230 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:31:40.306 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:34:02.385 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 13:34:02.651 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 13:34:02.654 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:34:02.658 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 13:34:02.661 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 13:34:14.034 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 11740 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 13:34:14.036 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 13:34:14.037 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 13:34:14.083 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 13:34:14.084 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 13:34:14.773 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 13:34:14.843 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-08-07 13:34:15.446 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 13:34:15.460 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:34:15.463 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 13:34:15.464 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 13:34:15.522 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 13:34:15.523 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1439 ms
+2025-08-07 13:34:15.685 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 13:34:15.736 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 13:34:15.766 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 13:34:16.025 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 13:34:16.053 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 13:34:16.163 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@2fd7ad59
+2025-08-07 13:34:16.165 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 13:34:16.208 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 13:34:16.981 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 13:34:17.025 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 13:34:17.311 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 13:34:17.312 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 13:34:17.398 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 13:34:17.867 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 13:34:17.880 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 13:34:17.899 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 13:34:17.911 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 4.416 seconds (process running for 4.841)
+2025-08-07 13:34:43.867 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 13:34:43.869 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 13:34:43.870 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 13:34:43.909 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:34:44.141 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:37:30.792 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 13:37:30.795 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 13:37:30.814 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 13:37:30.816 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 13:37:30.816 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 13:37:30.818 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 13:37:30.819 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 13:37:30.821 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 13:37:33.856 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:37:33.934 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 13:37:48.845 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 13:37:48.923 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 14:11:10.290 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m23s758ms791µs900ns).
+2025-08-07 14:17:15.990 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 14:17:16.067 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:06:30.377 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 13896 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 18:06:30.380 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 18:06:30.382 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 18:06:30.440 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 18:06:30.441 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 18:06:31.308 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 18:06:31.395 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 4 JPA repository interfaces.
+2025-08-07 18:06:32.171 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 18:06:32.185 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:06:32.189 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 18:06:32.190 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 18:06:32.249 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 18:06:32.250 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1808 ms
+2025-08-07 18:06:32.438 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 18:06:32.510 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 18:06:32.554 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 18:06:32.893 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 18:06:32.935 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 18:06:33.049 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1d49ce27
+2025-08-07 18:06:33.053 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 18:06:33.105 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 18:06:34.143 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 18:06:34.210 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 18:06:34.614 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 18:06:34.615 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 18:06:34.724 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 18:06:35.367 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 18:06:35.390 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:06:35.419 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 18:06:35.433 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.675 seconds (process running for 6.166)
+2025-08-07 18:06:54.847 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 18:06:54.847 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 18:06:54.849 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-07 18:07:42.077 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Received registration request for username: admin
+2025-08-07 18:07:42.078 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 18:07:42.233 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - User not found with username: admin
+2025-08-07 18:07:42.233 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.backend.service.UserService - Encoding password for user: admin
+2025-08-07 18:07:42.237 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - Attempting to save new user: admin
+2025-08-07 18:07:42.245 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.backend.service.UserService - User saved successfully with ID: 1
+2025-08-07 18:07:42.246 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.AuthController - Registration successful for user: admin
+2025-08-07 18:10:05.619 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 18:10:05.623 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 18:10:05.636 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 18:10:05.643 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 18:10:05.644 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 18:10:05.651 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 18:10:05.652 [http-nio-0.0.0.0-8080-exec-8] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 18:10:05.653 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 18:10:13.842 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:10:13.924 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:10:13.960 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:10:14.021 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:14:47.976 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s814ms963µs100ns).
+2025-08-07 18:20:24.378 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:20:24.494 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:20:24.547 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:20:24.605 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:21:05.981 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:21:06.204 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:21:06.257 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:21:06.327 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:39:04.854 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 18700 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 18:39:04.857 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 18:39:04.858 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 18:39:04.923 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 18:39:04.924 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 18:39:05.710 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 18:39:05.791 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-08-07 18:39:06.485 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 18:39:06.499 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:39:06.503 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 18:39:06.504 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 18:39:06.569 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 18:39:06.570 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1645 ms
+2025-08-07 18:39:06.761 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 18:39:06.852 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 18:39:06.904 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 18:39:07.310 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 18:39:07.357 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 18:39:07.485 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@27e625cf
+2025-08-07 18:39:07.487 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 18:39:07.559 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 18:39:08.601 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 18:39:08.659 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 18:39:09.082 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 18:39:09.083 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 18:39:09.185 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 18:39:09.722 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 18:39:09.748 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:39:09.779 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 18:39:09.789 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 5.558 seconds (process running for 6.015)
+2025-08-07 18:39:40.580 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 18:39:40.581 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 18:39:40.583 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-07 18:39:40.711 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 18:39:40.717 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 18:39:40.864 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 18:39:40.866 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 18:39:40.866 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 18:39:40.868 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 18:39:40.868 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 18:39:40.869 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 18:39:44.549 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:39:44.679 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:39:44.729 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:39:44.802 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:40:04.463 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:40:04.538 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:40:04.586 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:40:04.655 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:43:17.726 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:43:17.783 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:43:17.838 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:43:17.901 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:44:11.536 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:44:11.622 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:44:11.920 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:44:13.387 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:44:18.935 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:44:18.995 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:44:19.058 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:44:19.135 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:44:31.798 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:44:31.865 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:44:31.913 [http-nio-0.0.0.0-8080-exec-5] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:44:31.995 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:45:58.381 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:45:58.443 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:45:58.502 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:45:58.588 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 18:52:51.248 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 18:52:51.531 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 18:52:51.538 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 18:52:51.543 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 18:52:51.546 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 18:53:04.497 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 11928 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 18:53:04.500 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 18:53:04.501 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 18:53:04.551 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 18:53:04.552 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 18:53:05.287 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 18:53:05.364 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2025-08-07 18:53:05.995 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 18:53:06.008 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:53:06.011 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 18:53:06.011 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 18:53:06.080 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 18:53:06.081 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+2025-08-07 18:53:06.242 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 18:53:06.297 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 18:53:06.328 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 18:53:06.590 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 18:53:06.622 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 18:53:06.736 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@21b4bbcf
+2025-08-07 18:53:06.738 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 18:53:06.782 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 18:53:07.536 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 18:53:07.583 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 18:53:07.882 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 18:53:07.883 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 18:53:07.974 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 18:53:08.429 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 18:53:08.442 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 18:53:08.470 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 18:53:08.481 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 4.513 seconds (process running for 4.921)
+2025-08-07 18:53:12.632 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 18:53:12.632 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 18:53:12.634 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 18:53:12.673 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 18:53:12.880 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 18:53:12.948 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 18:53:13.026 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 19:09:38.693 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.AuthController - Received login request for username: admin
+2025-08-07 19:09:38.715 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - Loading user details for authentication for username: admin
+2025-08-07 19:09:38.803 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.backend.service.UserService - User details loaded for authentication: admin
+2025-08-07 19:09:38.808 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.AuthController - Authentication successful for user: admin
+2025-08-07 19:09:38.808 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - Attempting to find user by username: admin
+2025-08-07 19:09:38.810 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.backend.service.UserService - User found: admin
+2025-08-07 19:09:38.811 [http-nio-0.0.0.0-8080-exec-6] DEBUG c.e.b.controller.AuthController - User details fetched for: admin
+2025-08-07 19:09:38.811 [http-nio-0.0.0.0-8080-exec-6] INFO  c.e.b.controller.AuthController - Login successful for user: admin
+2025-08-07 19:10:01.720 [http-nio-0.0.0.0-8080-exec-7] INFO  c.e.b.controller.SyncController - Received request to sync all users.
+2025-08-07 19:10:01.794 [http-nio-0.0.0.0-8080-exec-8] INFO  c.e.b.controller.SyncController - Received request to sync all tags.
+2025-08-07 19:10:01.856 [http-nio-0.0.0.0-8080-exec-9] INFO  c.e.b.controller.SyncController - Received request to sync all barques.
+2025-08-07 19:10:01.939 [http-nio-0.0.0.0-8080-exec-10] INFO  c.e.b.controller.SyncController - Received request to sync all associations.
+2025-08-07 19:11:18.913 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-07 19:11:19.206 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-07 19:11:19.223 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 19:11:19.250 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-07 19:11:19.258 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-07 19:11:32.343 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Starting BackendRfidApplication using Java 17.0.15 with PID 11748 (C:\Users\lenovo\Downloads\backend_RFID\backend_RFID\target\classes started by lenovo in C:\Users\lenovo\Downloads\backend_RFID\backend_RFID)
+2025-08-07 19:11:32.345 [restartedMain] DEBUG c.e.backend.BackendRfidApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-08-07 19:11:32.346 [restartedMain] INFO  c.e.backend.BackendRfidApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-07 19:11:32.397 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-07 19:11:32.397 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-07 19:11:33.126 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-07 19:11:33.207 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 4 JPA repository interfaces.
+2025-08-07 19:11:33.887 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-07 19:11:33.900 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 19:11:33.903 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-07 19:11:33.903 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-08-07 19:11:33.960 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-07 19:11:33.962 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1563 ms
+2025-08-07 19:11:34.133 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-07 19:11:34.203 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-08-07 19:11:34.244 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-07 19:11:34.552 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-07 19:11:34.590 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-07 19:11:34.703 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@237230f8
+2025-08-07 19:11:34.708 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-07 19:11:34.767 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 3.45.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-07 19:11:35.653 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-07 19:11:35.700 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-07 19:11:36.003 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-08-07 19:11:36.004 [restartedMain] WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-08-07 19:11:36.093 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-07 19:11:36.586 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-07 19:11:36.607 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2025-08-07 19:11:36.632 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-07 19:11:36.642 [restartedMain] INFO  c.e.backend.BackendRfidApplication - Started BackendRfidApplication in 4.882 seconds (process running for 5.303)
+2025-08-07 19:11:39.848 [http-nio-0.0.0.0-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-07 19:11:39.849 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-07 19:11:39.850 [http-nio-0.0.0.0-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-07 19:11:40.007 [http-nio-0.0.0.0-8080-exec-1] INFO  c.e.b.controller.SyncController - ? [SYNC USERS] Total: 1
+2025-08-07 19:11:40.009 [http-nio-0.0.0.0-8080-exec-1] DEBUG c.e.b.controller.SyncController -  - User: ID=1, Username=admin
+2025-08-07 19:11:40.130 [http-nio-0.0.0.0-8080-exec-2] INFO  c.e.b.controller.SyncController - ? [SYNC TAGS] Total: 1
+2025-08-07 19:11:40.130 [http-nio-0.0.0.0-8080-exec-2] DEBUG c.e.b.controller.SyncController -  - Tag: ID=1, EPC=E20008163814008405900E40
+2025-08-07 19:11:40.190 [http-nio-0.0.0.0-8080-exec-3] INFO  c.e.b.controller.SyncController - ? [SYNC BARQUES] Total: 3
+2025-08-07 19:11:40.191 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Barque: ID=1, Matricule=BARQUE-001, Port=Agadir
+2025-08-07 19:11:40.191 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Barque: ID=2, Matricule=B-001, Port=Agadir
+2025-08-07 19:11:40.192 [http-nio-0.0.0.0-8080-exec-3] DEBUG c.e.b.controller.SyncController -  - Barque: ID=3, Matricule=B-301, Port=Tanger
+2025-08-07 19:11:40.298 [http-nio-0.0.0.0-8080-exec-4] INFO  c.e.b.controller.SyncController - ? [SYNC ASSOCIATIONS] Total: 1
+2025-08-07 19:11:40.299 [http-nio-0.0.0.0-8080-exec-4] DEBUG c.e.b.controller.SyncController -  - Association: ID=1, BarqueID=1, TagID=1, Status=associated, AssociatedAt=2025-08-07 17:42:21, UpdatedAt=2025-08-07 17:42:21
